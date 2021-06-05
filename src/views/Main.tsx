@@ -11,9 +11,9 @@ function Main() {
   return (
     <>
       <MainWrapper>
-        <SectionWrapper>
+        <HomeWrapper>
           <Home />
-        </SectionWrapper>
+        </HomeWrapper>
         <SectionWrapper>
           <About />
         </SectionWrapper>
@@ -30,6 +30,12 @@ function Main() {
     </>
   );
 }
+
+const HomeWrapper = styled.div`
+  width: 100vw;
+  height: 100vh;
+  color: #616161;
+`;
 
 const MainWrapper = styled.div`
   width: 100%;

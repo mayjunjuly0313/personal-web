@@ -3,6 +3,7 @@ import { fontStyle, fontWeight } from '@material-ui/system';
 import react from 'react';
 import styled from 'styled-components';
 import Icon from '@material-ui/core/Icon';
+import Links from './Links';
 
 function Intro() {
   return (
@@ -17,7 +18,7 @@ function Intro() {
         <ProfileImage />
       </Box>
       <Box
-        height='30%'
+        height='40%'
         display='flex'
         flexDirection='column'
         justifyContent='start'
@@ -35,32 +36,13 @@ function Intro() {
         </div>
       </Box>
       <Box
-        height='20%'
+        height='10%'
         display='flex'
         justifyContent='space-between'
         alignItems='center'
         padding='0 35%'
       >
-        <a
-          href='https://www.linkedin.com/in/seok-jun-hong-a447bb141/'
-          target='_blank'
-        >
-          <Icon className='fab fa-linkedin' color='primary' fontSize='large' />
-        </a>
-        <a href='https://github.com/sjunhong' target='_blank'>
-          <Icon
-            className='fab fa-github'
-            style={{ color: 'black' }}
-            fontSize='large'
-          />
-        </a>
-        <a href='https://medium.com/seokjunhong' target='_blank'>
-          <Icon
-            className='fab fa-medium-m'
-            style={{ color: 'black' }}
-            fontSize='large'
-          />
-        </a>
+        <Links />
       </Box>
     </IntroWrapper>
   );
@@ -78,7 +60,7 @@ const ProfileImage = styled.img.attrs({
 const IntroWrapper = styled.div`
   display: flex;
   flex-direction: column;
-  width: 40%;
+  width: 30%;
   height: 100%;
   justify-content: center;
   border: 2px solid green;
