@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import SectionWrapper from '../styles/SectionWrapper';
+import Section from '../styles/Section';
 import Home from '../components/Sections/Home';
 import Blogs from '../components/Sections/Blogs';
 import Contact from '../components/Sections/Contact';
@@ -9,25 +9,17 @@ import Projects from '../components/Sections/Projects';
 
 function Main() {
   return (
-    <>
-      <MainWrapper>
+    <Section>
+      <Wrapper>
         <HomeWrapper>
           <Home />
         </HomeWrapper>
-        <SectionWrapper>
-          <About />
-        </SectionWrapper>
-        <SectionWrapper>
-          <Projects />
-        </SectionWrapper>
-        <SectionWrapper>
-          <Blogs />
-        </SectionWrapper>
-        <SectionWrapper>
-          <Contact />
-        </SectionWrapper>
-      </MainWrapper>
-    </>
+        <About />
+        <Projects />
+        <Blogs />
+        <Contact />
+      </Wrapper>
+    </Section>
   );
 }
 
@@ -37,9 +29,7 @@ const HomeWrapper = styled.div`
   color: #616161;
 `;
 
-const MainWrapper = styled.div`
-  width: 100%;
-  height: 100%;
+const Wrapper = styled.div`
   display: flex;
   flex-direction: column;
 `;

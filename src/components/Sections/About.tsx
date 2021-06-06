@@ -7,16 +7,14 @@ import Skills from './About/Skills';
 
 function About() {
   return (
-    <>
-      <PageWrapper>
-        <TitleWrapper>ABOUT</TitleWrapper>
-        <MainContents>
-          <Intro />
-          <ExpTimeline />
-          <Skills />
-        </MainContents>
-      </PageWrapper>
-    </>
+    <Wrapper>
+      <TitleWrapper>ABOUT</TitleWrapper>
+      <MainContents>
+        <Intro />
+        <ExpTimeline />
+        <Skills />
+      </MainContents>
+    </Wrapper>
   );
 }
 
@@ -29,9 +27,12 @@ const MainContents = styled.div`
   border: 2px solid yellow;
 `;
 
-const PageWrapper = styled.div`
-  height: 100%;
-  width: 100%;
+const Wrapper = styled.div`
+  height: 100vh;
+  width: 100vw;
+  min-width: 1024px;
+  min-height: 900px;
+
   display: flex;
   flex-direction: column;
   justify-content: center;

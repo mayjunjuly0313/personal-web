@@ -7,7 +7,6 @@ const GlobalStyle = createGlobalStyle`
 
   html,
   body {
-    overflow-y: scroll;
     overflow-x: hidden;
     font-family: Raleway;
   }

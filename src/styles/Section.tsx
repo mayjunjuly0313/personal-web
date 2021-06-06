@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 
-const SectionWrapper = styled.section`
+const Section = styled.section`
   width: 100vw;
   min-width: 1024px;
   height: 100vh;
@@ -8,4 +8,4 @@ const SectionWrapper = styled.section`
   color: #616161;
 `;
 
-export default SectionWrapper;
+export default Section;
