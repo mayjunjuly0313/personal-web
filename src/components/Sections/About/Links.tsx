@@ -1,10 +1,11 @@
 import { Icon } from '@material-ui/core';
 import react from 'react';
+import styled from 'styled-components';
 
 function Links() {
   const iconStyle = 'default';
   return (
-    <>
+    <Wrapper>
       <a
         href='https://www.linkedin.com/in/seok-jun-hong-a447bb141/'
         target='_blank'
@@ -39,8 +40,14 @@ function Links() {
           fontSize={iconStyle}
         />
       </a>
-    </>
+    </Wrapper>
   );
 }
+
+const Wrapper = styled.div`
+  a {
+    padding: 0 10px;
+  }
+`;
 
 export default Links;

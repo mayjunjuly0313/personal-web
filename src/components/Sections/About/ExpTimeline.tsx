@@ -86,8 +86,10 @@ const DescWrapper = styled.div`
   height: 100%;
 
   justify-content: start;
-  border: 2px solid green;
   overflow-y: scroll;
+  ::-webkit-scrollbar {
+    display: none;
+  }
 `;
 
 export default ExpTimeline;
