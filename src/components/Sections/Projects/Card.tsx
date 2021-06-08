@@ -26,8 +26,8 @@ function Card({ imageSrc, projectTitle, techStack }: CardProps) {
 }
 
 const Wrapper = styled.div`
-  height: 300px;
-  width: 390px;
+  height: 100%;
+  width: 100%;
   position: relative;
 
   img {
@@ -44,6 +44,7 @@ const Wrapper = styled.div`
   h2 {
     display: inline-block;
     position: absolute;
+    width: 100%;
     left: 50%;
     top: 40px;
     text-align: center;
@@ -55,6 +56,7 @@ const Wrapper = styled.div`
   p {
     display: inline-block;
     position: absolute;
+    width: 100%;
     left: 50%;
     top: 80px;
     text-align: center;

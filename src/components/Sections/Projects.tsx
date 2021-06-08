@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
+import { projectsData } from '../../data/projectsData';
 import TitleWrapper from '../../styles/TitleWrapper';
 import Card from './Projects/Card';
 
@@ -8,36 +9,15 @@ function Projects() {
     <Wrapper>
       <TitleWrapper>Projects</TitleWrapper>
       <ContentWrapper>
-        <Card
-          imageSrc='play.png'
-          projectTitle='Coholy'
-          techStack={['Python', 'FastAPI']}
-        />
-        <Card
-          imageSrc='play.png'
-          projectTitle='Coholy'
-          techStack={['Python', 'FastAPI']}
-        />
-        <Card
-          imageSrc='play.png'
-          projectTitle='Coholy'
-          techStack={['Python', 'FastAPI']}
-        />
-        <Card
-          imageSrc='play.png'
-          projectTitle='Coholy'
-          techStack={['Python', 'FastAPI']}
-        />
-        <Card
-          imageSrc='play.png'
-          projectTitle='Coholy'
-          techStack={['Python', 'FastAPI']}
-        />
-        <Card
-          imageSrc='play.png'
-          projectTitle='Coholy'
-          techStack={['Python', 'FastAPI']}
-        />
+        {projectsData.map((val, ind) => {
+          return (
+            <Card
+              projectTitle={val.title}
+              imageSrc={val.image}
+              techStack={val.techStacks}
+            />
+          );
+        })}
       </ContentWrapper>
     </Wrapper>
   );
@@ -49,10 +29,11 @@ const ContentWrapper = styled.div`
   min-height: 700px;
 
   display: grid;
-  grid-template-columns: repeat(3, fit-content(390px));
-  grid-template-rows: repeat(3, fit-content(300px));
+  grid-template-columns: repeat(3, 390px);
+  grid-template-rows: repeat(3, 300px);
 
   justify-content: center;
+  align-items: center;
 `;
 
 const Wrapper = styled.div`
