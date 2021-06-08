@@ -7,8 +7,13 @@ const GlobalStyle = createGlobalStyle`
 
   html,
   body {
-    overflow-x: hidden;
     font-family: Raleway;
+    margin: 0;
+    padding: 0;
+    max-width: 100%;
+    ::-webkit-scrollbar { 
+      display: none; 
+      }
   }
 
   * {

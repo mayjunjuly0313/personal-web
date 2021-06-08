@@ -1,7 +1,6 @@
 import styled from 'styled-components';
 
 const TitleWrapper = styled.div`
-  height: 20%;
   width: 100%;
   display: flex;
   align-items: center;
@@ -9,9 +8,10 @@ const TitleWrapper = styled.div`
   text-decoration: underline;
   font-weight: 700;
 
+  padding: 100px 0;
+
   font-size: 42px;
   line-height: 48px;
-  border: 1px solid blue;
 `;
 
 export default TitleWrapper;

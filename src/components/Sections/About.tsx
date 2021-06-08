@@ -19,25 +19,21 @@ function About() {
 }
 
 const MainContents = styled.div`
-  height: 80%;
-  width: 100%;
+  height: 100vh;
+  width: 100vw;
+  min-height: 768px;
   display: flex;
   justify-content: center;
-  align-items: center;
-  border: 2px solid yellow;
+  align-items: start;
 `;
 
 const Wrapper = styled.div`
-  height: 100vh;
-  width: 100vw;
-  min-width: 1024px;
-  min-height: 900px;
-
+  height: 100%;
+  width: 100%;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: start;
   align-items: center;
-  border: 1px solid black;
 `;
 
 export default About;

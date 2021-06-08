@@ -26,6 +26,7 @@ function Main() {
 const HomeWrapper = styled.div`
   width: 100vw;
   height: 100vh;
+  max-width: 100%;
   color: #616161;
 `;
 
