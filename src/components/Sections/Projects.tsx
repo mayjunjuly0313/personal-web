@@ -13,6 +13,31 @@ function Projects() {
           projectTitle='Coholy'
           techStack={['Python', 'FastAPI']}
         />
+        <Card
+          imageSrc='play.png'
+          projectTitle='Coholy'
+          techStack={['Python', 'FastAPI']}
+        />
+        <Card
+          imageSrc='play.png'
+          projectTitle='Coholy'
+          techStack={['Python', 'FastAPI']}
+        />
+        <Card
+          imageSrc='play.png'
+          projectTitle='Coholy'
+          techStack={['Python', 'FastAPI']}
+        />
+        <Card
+          imageSrc='play.png'
+          projectTitle='Coholy'
+          techStack={['Python', 'FastAPI']}
+        />
+        <Card
+          imageSrc='play.png'
+          projectTitle='Coholy'
+          techStack={['Python', 'FastAPI']}
+        />
       </ContentWrapper>
     </Wrapper>
   );
@@ -22,6 +47,12 @@ const ContentWrapper = styled.div`
   height: 100vh;
   width: 100vw;
   min-height: 700px;
+
+  display: grid;
+  grid-template-columns: repeat(3, fit-content(390px));
+  grid-template-rows: repeat(3, fit-content(300px));
+
+  justify-content: center;
 `;
 
 const Wrapper = styled.div`
