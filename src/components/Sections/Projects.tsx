@@ -29,8 +29,8 @@ const ContentWrapper = styled.div`
   min-height: 700px;
 
   display: grid;
-  grid-template-columns: repeat(3, 390px);
-  grid-template-rows: repeat(3, 300px);
+  grid-template-columns: repeat(3, minmax(0, 390px));
+  grid-template-rows: repeat(2, minmax(0, 300px));
 
   justify-content: center;
   align-items: center;
