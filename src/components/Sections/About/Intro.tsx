@@ -1,6 +1,6 @@
-import { Box } from '@material-ui/core';
 import styled from 'styled-components';
 import Links from './Links';
+import { Box } from '@material-ui/core';
 
 function Intro() {
   return (
