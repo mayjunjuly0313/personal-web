@@ -1,4 +1,6 @@
-export const particlesConfig = {
+import { ISourceOptions } from 'react-tsparticles';
+
+export const particlesConfig: ISourceOptions = {
   particles: {
     number: {
       value: 53,
@@ -92,7 +94,6 @@ export const particlesConfig = {
         size: 40,
         duration: 2,
         opacity: 8,
-        speed: 3,
       },
       repulse: {
         distance: 200,

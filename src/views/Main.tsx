@@ -7,7 +7,7 @@ import Home from './Home';
 import Projects from './Projects';
 
 function Main() {
-  const aboutRef = useRef<HTMLDivElement>();
+  const aboutRef = useRef<HTMLDivElement>(null);
   const handleNavigate: () => void = () => {
     if (aboutRef.current) {
       aboutRef.current.scrollIntoView({ behavior: 'smooth' });
@@ -20,7 +20,7 @@ function Main() {
         <HomeWrapper>
           <Home handleNavigate={handleNavigate} />
         </HomeWrapper>
-        <About aboutRef={aboutRef} />
+        <About ref={aboutRef} />
         <Projects />
         {/* <Blogs />
         <Contact /> */}

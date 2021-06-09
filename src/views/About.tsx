@@ -1,22 +1,13 @@
-import React from 'react';
+import React, { ForwardedRef, forwardRef } from 'react';
 import styled from 'styled-components';
 import TitleWrapper from '../styles/TitleWrapper';
 import ExpTimeline from '../components/Sections/About/ExpTimeline';
 import Intro from '../components/Sections/About/Intro';
 import Skills from '../components/Sections/About/Skills';
 
-interface RefObject<T> {
-  // immutable
-  current: T | null | undefined;
-}
-
-interface Props {
-  aboutRef: RefObject<HTMLDivElement>;
-}
-
-function About({ aboutRef }: Props) {
+const About = forwardRef((props, ref: ForwardedRef<HTMLDivElement>) => {
   return (
-    <div ref={aboutRef}>
+    <div ref={ref}>
       <Wrapper>
         <TitleWrapper>ABOUT</TitleWrapper>
         <MainContents>
@@ -27,7 +18,7 @@ function About({ aboutRef }: Props) {
       </Wrapper>
     </div>
   );
-}
+});
 
 const MainContents = styled.div`
   height: 100vh;
