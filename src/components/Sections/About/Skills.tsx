@@ -16,25 +16,26 @@ interface IconDict {
 }
 
 function Skills() {
+  const keys = ['laguages', 'libAndFrameworks', 'dataAndML', 'devOpsAndTools'];
   const genIcons = (iconList: IconDict) =>
     Object.keys(iconList).map((item, i) => {
       if (iconList === languages) {
         return (
-          <CategoryWrapper>
+          <CategoryWrapper key={keys[i]}>
             <h4>{item}</h4>
             <IconWrapper>
               {iconList[item].map((icon) => (
-                <img src={icon.src} alt={icon.name} />
+                <img src={icon.src} alt={icon.name} key={icon.name} />
               ))}
             </IconWrapper>
           </CategoryWrapper>
         );
       } else {
         return (
-          <CategoryWrapper>
+          <CategoryWrapper key={keys[i]}>
             <IconWrapper>
               {iconList[item].map((icon) => (
-                <img src={icon.src} alt={icon.name} />
+                <img src={icon.src} alt={icon.name} key={icon.name} />
               ))}
             </IconWrapper>
           </CategoryWrapper>

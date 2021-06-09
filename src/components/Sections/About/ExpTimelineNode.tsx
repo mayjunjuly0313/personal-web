@@ -1,7 +1,5 @@
-import react from 'react';
 import {
   TimelineItem,
-  Timeline,
   TimelineOppositeContent,
   TimelineDot,
   TimelineSeparator,
@@ -76,7 +74,6 @@ function ExpTimelineNode({
           </Typography>
           <Typography variant='body2' className={styles.content}>
             {description.map((line) => {
-              console.log(line);
               return (
                 <>
                   {line}

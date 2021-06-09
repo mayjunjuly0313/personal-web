@@ -1,15 +1,6 @@
-import react from 'react';
 import styled from 'styled-components';
-import {
-  TimelineItem,
-  Timeline,
-  TimelineOppositeContent,
-  TimelineDot,
-  TimelineSeparator,
-  TimelineConnector,
-  TimelineContent,
-} from '@material-ui/lab';
-import { makeStyles, Paper, Typography } from '@material-ui/core';
+import { Timeline } from '@material-ui/lab';
+import { makeStyles } from '@material-ui/core';
 import ExpTimelineNode from './ExpTimelineNode';
 
 const timelineStyles = makeStyles(() => ({
@@ -28,6 +19,7 @@ function ExpTimeline() {
     <DescWrapper>
       <Timeline className={styles.timeline}>
         <ExpTimelineNode
+          key={0}
           startDate='2021/5'
           endDate='Present'
           title='Software Development Intern'
@@ -36,6 +28,7 @@ function ExpTimeline() {
           description={['-']}
         />
         <ExpTimelineNode
+          key={1}
           startDate='2021/2'
           endDate='2021/5'
           title='Web Development Intern'
@@ -47,6 +40,7 @@ function ExpTimeline() {
           ]}
         />
         <ExpTimelineNode
+          key={2}
           startDate='2021/1'
           endDate='2021/2'
           title='Software Development Intern'
@@ -61,6 +55,7 @@ function ExpTimeline() {
           ]}
         />
         <ExpTimelineNode
+          key={3}
           startDate='2020/3'
           endDate='2020/7'
           title='Software Development Intern'

@@ -1,23 +1,30 @@
-import React from 'react';
+import { useRef } from 'react';
 import styled from 'styled-components';
 import Section from '../styles/Section';
-import Home from '../components/Sections/Home';
-import Blogs from '../components/Sections/Blogs';
-import Contact from '../components/Sections/Contact';
-import About from '../components/Sections/About';
-import Projects from '../components/Sections/Projects';
+import About from './About';
+import Footer from './Footer';
+import Home from './Home';
+import Projects from './Projects';
 
 function Main() {
+  const aboutRef = useRef<HTMLDivElement>();
+  const handleNavigate: () => void = () => {
+    if (aboutRef.current) {
+      aboutRef.current.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
+
   return (
     <Section>
       <Wrapper>
         <HomeWrapper>
-          <Home />
+          <Home handleNavigate={handleNavigate} />
         </HomeWrapper>
-        <About />
+        <About aboutRef={aboutRef} />
         <Projects />
-        <Blogs />
-        <Contact />
+        {/* <Blogs />
+        <Contact /> */}
+        <Footer />
       </Wrapper>
     </Section>
   );

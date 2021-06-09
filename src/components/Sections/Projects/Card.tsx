@@ -5,9 +5,10 @@ interface CardProps {
   imageSrc: string;
   projectTitle: string;
   techStack: string[];
+  githubUrl: string;
 }
 
-function Card({ imageSrc, projectTitle, techStack }: CardProps) {
+function Card({ imageSrc, projectTitle, techStack, githubUrl }: CardProps) {
   return (
     <Wrapper>
       <img
@@ -18,7 +19,9 @@ function Card({ imageSrc, projectTitle, techStack }: CardProps) {
       <p>{techStack.join(' / ')}</p>
       <div>
         <Button padding='12px 20px' color='#616161'>
-          LEARN MORE
+          <a href={githubUrl} target='_blank' rel='noopener noreferrer'>
+            LEARN MORE
+          </a>
         </Button>
       </div>
     </Wrapper>
@@ -82,6 +85,10 @@ const Wrapper = styled.div`
 
     opacity: 0;
     transition: opacity 1s;
+  }
+  a {
+    color: inherit;
+    text-decoration: none;
   }
 `;
 

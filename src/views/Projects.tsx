@@ -1,8 +1,7 @@
-import React from 'react';
 import styled from 'styled-components';
-import { projectsData } from '../../data/projectsData';
-import TitleWrapper from '../../styles/TitleWrapper';
-import Card from './Projects/Card';
+import Card from '../components/Sections/Projects/Card';
+import { projectsData } from '../data/projectsData';
+import TitleWrapper from '../styles/TitleWrapper';
 
 function Projects() {
   return (
@@ -12,9 +11,11 @@ function Projects() {
         {projectsData.map((val, ind) => {
           return (
             <Card
+              key={val.title}
               projectTitle={val.title}
               imageSrc={val.image}
               techStack={val.techStacks}
+              githubUrl={val.githubUrl}
             />
           );
         })}

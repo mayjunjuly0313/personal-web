@@ -1,8 +1,5 @@
-import { Box, Container } from '@material-ui/core';
-import { fontStyle, fontWeight } from '@material-ui/system';
-import react from 'react';
+import { Box } from '@material-ui/core';
 import styled from 'styled-components';
-import Icon from '@material-ui/core/Icon';
 import Links from './Links';
 
 function Intro() {
