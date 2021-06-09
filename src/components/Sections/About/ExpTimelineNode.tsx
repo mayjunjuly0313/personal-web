@@ -73,12 +73,12 @@ function ExpTimelineNode({
             {companyName}
           </Typography>
           <Typography variant='body2' className={styles.content}>
-            {description.map((line) => {
+            {description.map((line, index) => {
               return (
-                <>
+                <span key={index}>
                   {line}
                   <br />
-                </>
+                </span>
               );
             })}
           </Typography>
