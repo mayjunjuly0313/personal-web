@@ -50,7 +50,7 @@ export const awardsData: Award[] = [
         </span>
       </b>
     ),
-    devpostUrl: 'https://devpost.com/software/recaipe',
+    devpostUrl: 'http://www.ccsc.org/midwest/student-programming-contest',
   },
 
   {
@@ -81,7 +81,7 @@ export const awardsData: Award[] = [
   },
   {
     title: 'Data Science Hackathon',
-    image: 'DShack.png',
+    image: 'DSHack.png',
     awards: (
       <b>
         <span style={{ fontSize: '18px' }}>
@@ -91,6 +91,6 @@ export const awardsData: Award[] = [
         </span>
       </b>
     ),
-    devpostUrl: 'https://devpost.com/software/recaipe',
+    devpostUrl: 'https://www.saintmarys.edu/math/data-science-hackathon',
   },
 ];
