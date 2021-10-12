@@ -3,23 +3,20 @@ import Button from '../../../styles/Button';
 
 interface CardProps {
   imageSrc: string;
-  projectTitle: string;
-  techStack: string[];
-  githubUrl: string;
+  title: string;
+  description: string[];
+  linkUrl: string;
 }
 
-function Card({ imageSrc, projectTitle, techStack, githubUrl }: CardProps) {
+function Card({ imageSrc, title, description, linkUrl }: CardProps) {
   return (
     <Wrapper>
-      <img
-        src={`${process.env.PUBLIC_URL}/images/${imageSrc}`}
-        alt={imageSrc}
-      />
-      <h2>{projectTitle}</h2>
-      <p>{techStack.join(' / ')}</p>
+      <img src={`${process.env.PUBLIC_URL}/images/${imageSrc}`} alt={imageSrc} />
+      <h2>{title}</h2>
+      <p>{description}</p>
       <div>
-        <Button padding='12px 20px' color='#616161'>
-          <a href={githubUrl} target='_blank' rel='noopener noreferrer'>
+        <Button padding="12px 20px" color="#616161">
+          <a href={linkUrl} target="_blank" rel="noopener noreferrer">
             LEARN MORE
           </a>
         </Button>

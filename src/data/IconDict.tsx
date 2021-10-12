@@ -41,7 +41,7 @@ export const libAndFrameworks: IconDict = {
     },
     {
       name: 'Node.js',
-      src: 'https://img.shields.io/static/v1?style=for-the-badge&label=&message=Node.js&color=393&labelColor=212121&logoColor=393&logo=node-dot-js',
+      src: 'https://img.shields.io/static/v1?style=for-the-badge&label=&message=Node.js&color=393&labelColor=F4F4F4&logoColor=393&logo=node.js',
     },
     {
       name: 'Express',
@@ -82,6 +82,10 @@ export const dataAndML: IconDict = {
 export const devOpsAndTools: IconDict = {
   devOps: [
     {
+      name: 'CI/CD',
+      src: 'https://img.shields.io/static/v1?style=for-the-badge&label=&message=CI/CD&color=4053D6&labelColor=e0e0e0&logoColor=4053D6',
+    },
+    {
       name: 'Docker',
       src: 'https://img.shields.io/static/v1?style=for-the-badge&label=&message=Docker&color=2496ed&labelColor=212121&logoColor=2496ed&logo=docker',
     },
@@ -90,16 +94,20 @@ export const devOpsAndTools: IconDict = {
       src: 'https://img.shields.io/static/v1?style=for-the-badge&label=&message=AWS&color=232f3e&labelColor=e0e0e0&logoColor=232f3e&logo=amazon-aws',
     },
     {
-      name: 'AWS S3',
-      src: 'https://img.shields.io/static/v1?style=for-the-badge&label=&message=AWS S3&color=569A31&labelColor=e0e0e0&logoColor=569A31&logo=amazon-s3',
+      name: 'AWS CDK',
+      src: 'https://img.shields.io/static/v1?style=for-the-badge&label=&message=AWS%20CDK&color=232f3e&labelColor=e0e0e0&logoColor=232f3e&logo=amazon-aws',
     },
     {
-      name: 'AWS DynamoDB',
-      src: 'https://img.shields.io/static/v1?style=for-the-badge&label=&message=AWS DynamoDB&color=4053D6&labelColor=e0e0e0&logoColor=4053D6&logo=amazon-dynamodb',
+      name: 'AWS Lambda',
+      src: 'https://img.shields.io/static/v1?style=for-the-badge&label=&message=AWS%20Lambda&color=232f3e&labelColor=e0e0e0&logoColor=232f3e&logo=amazon-lambda',
     },
     {
       name: 'GCP',
       src: 'https://img.shields.io/static/v1?style=for-the-badge&label=&message=GCP&color=4285f4&labelColor=212121&logoColor=4285f4&logo=google-cloud',
+    },
+    {
+      name: 'Firebase',
+      src: 'https://img.shields.io/static/v1?style=for-the-badge&label=&message=Firebase&color=039BE5&labelColor=039BE5&logoColor=FFCA28&logo=Firebase',
     },
     {
       name: 'GitHub Actions',

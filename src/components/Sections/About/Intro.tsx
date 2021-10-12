@@ -5,33 +5,27 @@ import { Box } from '@material-ui/core';
 function Intro() {
   return (
     <IntroWrapper>
-      <Box
-        height='50%'
-        display='flex'
-        justifyContent='center'
-        alignItems='center'
-      >
+      <Box height="50%" display="flex" justifyContent="center" alignItems="center">
         <ProfileImage />
       </Box>
       <Box
-        height='40%'
-        display='flex'
-        flexDirection='column'
-        justifyContent='start'
-        alignItems='center'
-        textAlign='center'
-        padding='0 10%'
+        height="40%"
+        display="flex"
+        flexDirection="column"
+        justifyContent="start"
+        alignItems="center"
+        textAlign="center"
+        padding="0 10%"
       >
         <h2>Hello!</h2>
         <div style={{ lineHeight: '25px' }}>
-          I'm a Student Developer who loves to learn. <div />I have serious
-          passion for full-stack: especially Backend Development. <div />
-          Trying to learn better ways to develop a software and have been
-          studying Domain Driven Deisgn, Clean Architecture, and Test Driven
-          Development.
+          I'm a Student Developer who loves to learn. <div />I have serious passion for Backend Development & DevOps.{' '}
+          <div />
+          Trying to learn better ways to develop a software and have been studying Software Architectures, Databases,
+          CI/CD pipeline, etc .
         </div>
       </Box>
-      <Box display='flex' justifyContent='space-around' alignItems='center'>
+      <Box display="flex" justifyContent="space-around" alignItems="center">
         <Links />
       </Box>
     </IntroWrapper>

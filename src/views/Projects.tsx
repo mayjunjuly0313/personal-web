@@ -8,14 +8,14 @@ function Projects() {
     <Wrapper>
       <TitleWrapper>Projects</TitleWrapper>
       <ContentWrapper>
-        {projectsData.map((val, ind) => {
+        {projectsData.map((val, idx) => {
           return (
             <Card
-              key={val.title}
-              projectTitle={val.title}
+              key={idx}
+              title={val.title}
               imageSrc={val.image}
-              techStack={val.techStacks}
-              githubUrl={val.githubUrl}
+              description={val.techStacks}
+              linkUrl={val.githubUrl}
             />
           );
         })}

@@ -10,38 +10,34 @@ interface Props {
 
 function Home({ handleNavigate }: Props) {
   return (
-    <>
-      <div
-        style={{ position: 'absolute', zIndex: -1, backgroundColor: '#0f1016' }}
-      >
-        <Particles height='100vh' width='100vw' params={particlesConfig} />
+    <Wrapper>
+      <div style={{ position: 'absolute', zIndex: -1, backgroundColor: '#0f1016' }}>
+        <Particles height="100vh" width="100vw" params={particlesConfig} />
       </div>
-      <Wrapper>
-        Hello, I'm{' '}
-        <span
-          style={{ color: '#e31b6d', display: 'contents', fontWeight: 600 }}
-        >
-          Seok Jun Hong
-        </span>
-        .<br /> I'm a full-stack developer.
+      <DescWrapper>
+        Hello, I'm <span style={{ color: '#e31b6d', display: 'contents', fontWeight: 600 }}>Jun Hong</span>
+        .<br /> I'm a Software Engineer.
         <div>
-          <Button
-            padding='12px 50px 12px 20px'
-            color='#fff'
-            onClick={handleNavigate}
-          >
+          <Button padding="12px 50px 12px 20px" color="#fff" onClick={handleNavigate}>
             View my Work
             <span>
               <ArrowForwardOutlinedIcon />
             </span>
           </Button>
         </div>
-      </Wrapper>
-    </>
+      </DescWrapper>
+    </Wrapper>
   );
 }
 
 const Wrapper = styled.div`
+  width: 100vw;
+  height: 100vh;
+  max-width: 100%;
+  color: #616161;
+`;
+
+const DescWrapper = styled.div`
   color: #fff;
   width: 100%;
   height: 100%;
